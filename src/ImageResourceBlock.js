@@ -1,6 +1,4 @@
-var fs = require('fs');
 var StreamReader = require('./StreamReader');
-
 /**
  * @constructor
  */
@@ -58,7 +56,4 @@ ImageResourceBlock.prototype.toObject = function() {
 
 module.exports = ImageResourceBlock;
 
-var blocks = fs.readdirSync(__dirname + "/ImageResourceBlocks");
-for(var i = 0; i < blocks.length; i++) {
-  require('./ImageResourceBlocks/' + blocks[i]);
-}
+require('./ImageResourceBlocks/1050.js')

@@ -1,4 +1,3 @@
-var fs = require('fs');
 
 /**
  * @constructor
@@ -79,8 +78,21 @@ Descriptor.prototype.toObject = function() {
 
 module.exports = Descriptor;
 
-
-var descriptors = fs.readdirSync(__dirname + "/Descriptor");
-for(var i = 0; i < descriptors.length; i++) {
-  require('./Descriptor/' + descriptors[i]);
-}
+require('./Descriptor/GlbC.js')
+require('./Descriptor/GlbO.js')
+require('./Descriptor/ObAr.js')
+require('./Descriptor/Objc.js')
+require('./Descriptor/TEXT.js')
+require('./Descriptor/UnFl.js')
+require('./Descriptor/UntF.js')
+require('./Descriptor/VlLs.js')
+require('./Descriptor/alis.js')
+require('./Descriptor/bool.js')
+require('./Descriptor/doub.js')
+require('./Descriptor/enum.js')
+require('./Descriptor/long.js')
+require('./Descriptor/obj.js')
+require('./Descriptor/prop.js')
+require('./Descriptor/rele.js')
+require('./Descriptor/tdta.js')
+require('./Descriptor/type.js')

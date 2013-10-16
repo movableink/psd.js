@@ -1,5 +1,3 @@
-var fs = require('fs');
-
 /**
  * @constructor
  */
@@ -58,7 +56,26 @@ module.exports = AdditionalLayerInfo;
 
 require('./AdditionalLayerInfo/EffectsLayer');
 
-var layers = fs.readdirSync(__dirname + "/AdditionalLayerInfo");
-for(var i = 0; i < layers.length; i++) {
-  require('./AdditionalLayerInfo/' + layers[i]);
-}
+require('./AdditionalLayerInfo/Patt.js')
+require('./AdditionalLayerInfo/SoLd.js')
+require('./AdditionalLayerInfo/fxrp.js')
+require('./AdditionalLayerInfo/knko.js')
+require('./AdditionalLayerInfo/lnsr.js')
+require('./AdditionalLayerInfo/lspf.js')
+require('./AdditionalLayerInfo/lyvr.js')
+require('./AdditionalLayerInfo/EffectsLayer.js')
+require('./AdditionalLayerInfo/PlLd.js')
+require('./AdditionalLayerInfo/TySh.js')
+require('./AdditionalLayerInfo/iOpa.js')
+require('./AdditionalLayerInfo/lclr.js')
+require('./AdditionalLayerInfo/lrFX.js')
+require('./AdditionalLayerInfo/luni.js')
+require('./AdditionalLayerInfo/shmd.js')
+require('./AdditionalLayerInfo/GdFl.js')
+require('./AdditionalLayerInfo/SoCo.js')
+require('./AdditionalLayerInfo/clbl.js')
+require('./AdditionalLayerInfo/infx.js')
+require('./AdditionalLayerInfo/lfx2.js')
+require('./AdditionalLayerInfo/lsct.js')
+require('./AdditionalLayerInfo/lyid.js')
+require('./AdditionalLayerInfo/vmsk.js')
